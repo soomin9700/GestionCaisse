@@ -2,7 +2,8 @@
 
 use CodeIgniter\Router\RouteCollection;
 
-/**
- * @var RouteCollection $routes
- */
-$routes->get('/', 'Home::index');
+
+$routes->get('/', 'LoginController::index');
+$routes->post('/login', 'LoginController::authenticate');
+
+$routes->get('/caisse', 'CaisseController::caisse');
