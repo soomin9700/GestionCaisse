@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saisir achat</title>
+</head>
+<body>
+    <h1>Saisir un achat</h1>
+    <form action="/saisir_achat" method="post">
+        <label for="produit">Choisir un produit :</label>
+        <select name="produit" id="produit">
+            <option value="produit1">Produit 1</option>
+            <option value="produit2">Produit 2</option>
+            <option value="produit3">Produit 3</option>
+        </select>
+        <label for="qtte">Quantité :</label>
+        <input type="number" name="qtte" id="qtte" min="1" required>
+
+        <button type="submit">Valider</button>
+    </form>
+
+    <h1>Liste des achats</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Produit</th>
+                <th>Prix UNitaire</th>
+                <th>Quantité</th>
+                <th>Montant</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+</body>
+</html>
