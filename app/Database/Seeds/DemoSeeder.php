@@ -10,9 +10,9 @@ class DemoSeeder extends Seeder
     {
         // 1. Insertion des Utilisateurs (users)
         $this->db->table('users')->insertBatch([
-            ['nom' => 'Rojo',    'email' => 'rojo@itu.mg',    'mot_de_passe' => password_hash('secret123', PASSWORD_BCRYPT)],
-            ['nom' => 'Sitraka', 'email' => 'sitraka@itu.mg', 'mot_de_passe' => password_hash('azerty', PASSWORD_BCRYPT)],
-            ['nom' => 'Tiana',   'email' => 'tiana@itu.mg',   'mot_de_passe' => password_hash('password', PASSWORD_BCRYPT)],
+            ['nom' => 'Rojo',    'email' => 'rojo@itu.mg',    'mot_de_passe' => 'secret123'],
+            ['nom' => 'Sitraka', 'email' => 'sitraka@itu.mg', 'mot_de_passe' => 'azerty'],
+            ['nom' => 'Tiana',   'email' => 'tiana@itu.mg',   'mot_de_passe' => 'password'],
         ]);
 
         // 2. Insertion des Caisses (2 caisses)
