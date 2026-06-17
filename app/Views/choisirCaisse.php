@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Choisir une caisse</h1>
-    <form action="/choisir_caisse" method="post">
+    <form action="/Achat" method="post">
         <label for="caisse">Sélectionnez une caisse :</label>
         <select name="caisse" id="caisse">
             <?php foreach ($caisses as $caisse): ?>
