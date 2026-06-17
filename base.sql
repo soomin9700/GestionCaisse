@@ -33,7 +33,6 @@ CREATE TABLE Achats (
   montant DECIMAL(10,2) NOT NULL,
   dateAchat DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
   PRIMARY KEY (id),
-  FOREIGN KEY (idProduit) REFERENCES produits(id),
   FOREIGN KEY (idCaisse) REFERENCES caisses(id),
   FOREIGN KEY (idUser) REFERENCES users(id)
 );
